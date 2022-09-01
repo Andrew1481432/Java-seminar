@@ -6,6 +6,7 @@ public class Project3 {
 
     private static int getRandomDiceNumber() {
         return (int) (Math.random() * 10) + 1;
+        // Class Random
     }
 
     private static void show(int[] arr) {
