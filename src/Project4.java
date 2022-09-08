@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+
+/**
+ * На вход получаем любое число(дробное) в 10-ичной системе исчисления
+ * Также на вход получаем систему счисления
+ * Программа должна перевести из 10 в любую систему исчисления
+ */
 public class Project4 {
 
     public static double roundAvoid(double value, int places) {
@@ -18,7 +24,6 @@ public class Project4 {
             result.insert(0, tab[intN % sys]);
             intN /= sys;
         }
-
         StringBuilder resultPart2 = new StringBuilder();
         int i = 0;
         while(i < 4) {
@@ -36,10 +41,6 @@ public class Project4 {
         return result+","+resultPart2;
     }
 
-    /*
-    На ввод получаем два числа любое число(дробное)
-    также на вход систему счисления программа должна перевести в любую систему исчисления
-    */
     public static void main(String[] args) {
         System.out.print("Любое число(₁₀) = ");
         Scanner input = new Scanner(System.in);
