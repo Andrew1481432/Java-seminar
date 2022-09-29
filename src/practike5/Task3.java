@@ -3,7 +3,7 @@ package practike5;
 public class Task3 {
 
     private static void showSequence(int start, int end) {
-        if (start == end) {
+        if(start == end) {
             return;
         }
         if(start < end) {
@@ -24,7 +24,6 @@ public class Task3 {
         } else {
             A--;
         }
-
         showSequence(A, B);
     }
 
