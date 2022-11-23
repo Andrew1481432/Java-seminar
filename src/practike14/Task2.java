@@ -18,7 +18,7 @@ public class Task2 {
      * @param args
      */
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("abcdefghijklmnopqrstuv18340");
+        Pattern pattern = Pattern.compile("abcdefghijklmnopqrstuv1840");
         Matcher matcher = pattern.matcher("abcdefghijklmnopqrstuv18340");
         if(matcher.matches()) {
             System.out.print("ДА");

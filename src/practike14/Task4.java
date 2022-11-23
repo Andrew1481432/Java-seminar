@@ -19,7 +19,7 @@ public class Task4 {
         ArrayList<String> matches = new ArrayList<>();
 
         Pattern pattern = Pattern.compile("\\d+ \\+");
-        Matcher m = pattern.matcher("(1 + 8) – 9 / 4");
+        Matcher m = pattern.matcher("6 / 5 – 2 * 9");
         if (m.find()) {
             matches.add(m.group());
         }

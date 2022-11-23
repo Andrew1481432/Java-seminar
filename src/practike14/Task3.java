@@ -15,7 +15,7 @@ public class Task3 {
      */
     public static void main(String[] args) {
         Pattern pattern = Pattern.compile("(\\d+)(\\.(\\d+))? (USD|RUB|EU)");
-        Matcher matcher = pattern.matcher("25.98 USD");
+        Matcher matcher = pattern.matcher("244 ERR");
         if(matcher.matches()) {
             String cost = matcher.group(1);
             if(matcher.group(2) != null) {
