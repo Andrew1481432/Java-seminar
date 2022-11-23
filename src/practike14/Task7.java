@@ -29,8 +29,8 @@ public class Task7 {
         System.out.println(checkPass("A007"));
     }
 
-    private static boolean checkPass(final String dateAsString) {
-        Matcher m = PASS_PATTERN.matcher(dateAsString);
+    public static boolean checkPass(final String pass) {
+        Matcher m = PASS_PATTERN.matcher(pass);
         return m.matches();
     }
 
