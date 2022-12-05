@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class Task7 {
 
     private static final Pattern PASS_PATTERN = Pattern.compile(
-            "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d_]{8,}$"
+            "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)[A-Za-z\\d_]{8,}$"
     );
 
     /**

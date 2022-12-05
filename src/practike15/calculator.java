@@ -14,7 +14,6 @@ class calculator extends JFrame implements ActionListener {
         s0 = s1 = s2 = "";
     }
 
-    // main function
     public static void main(String args[])  {
         f = new JFrame("calculator");
 
@@ -44,7 +43,6 @@ class calculator extends JFrame implements ActionListener {
         b8 = new JButton("8");
         b9 = new JButton("9");
 
-        // equals button
         beq1 = new JButton("=");
 
         ba = new JButton("+");

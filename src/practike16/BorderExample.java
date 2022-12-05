@@ -111,12 +111,13 @@ public class BorderExample extends JFrame {
                     JOptionPane.showMessageDialog(null, "Введите число!");
                     return;
                 }
-
                 attempts++;
-                if (attempts == ATTEMPTS_FINAL)
-                    System.exit(1);
+
                 if (jta.getText().equals(randomNumberStr)) {
                     JOptionPane.showMessageDialog(null, "Вы угадали!\nПоздравляю!");
+                    System.exit(1);
+                } else if(attempts == ATTEMPTS_FINAL) {
+                    System.exit(1);
                 } else {
                     System.out.println("DEBUG::"+randomNumberStr);
                     String msgNumber = "";
@@ -127,7 +128,6 @@ public class BorderExample extends JFrame {
                     }
                     JOptionPane.showMessageDialog(null, "Вы не угадали :( "+msgNumber+"\nОставшихся попыток: "+(ATTEMPTS_FINAL - attempts));
                 }
-
             }
             public void mouseEntered(MouseEvent event) {
 

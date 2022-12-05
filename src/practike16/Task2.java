@@ -11,6 +11,9 @@ public class Task2 extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         JTextArea ta = new JTextArea();
+        ta.setRows(10);
+        ta.setColumns(20);
+
         ta.setFont(new Font("Times New Roman", Font.PLAIN, 12));
 
         String[] colors = {"Черный", "Красный", "Синий"};
@@ -38,9 +41,9 @@ public class Task2 extends JFrame {
             ta.setForeground(c);
         });
 
-        getContentPane().add(cols, BorderLayout.NORTH);
-        getContentPane().add(fonts, BorderLayout.SOUTH);
-        getContentPane().add(ta);
+        add(cols);
+        add(fonts);
+        add(ta);
 
     }
 
