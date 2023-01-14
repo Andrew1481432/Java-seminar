@@ -1,7 +1,6 @@
 package ru.testerdev.task6;
 
 import com.google.common.collect.*;
-
 import java.util.*;
 
 public class Main {
