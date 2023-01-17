@@ -1,4 +1,4 @@
-package ru.testerdev.task10;
+package ru.testerdev.taskTEST;
 
 import it.unimi.dsi.fastutil.ints.Int2IntOpenHashMap;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
